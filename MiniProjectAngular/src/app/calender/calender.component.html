@@ -1,0 +1,26 @@
+<nav class="navbar navbar-light bg-faded">
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon1">@</span>
+      <input class="form-control mr-sm-2" [(ngModel)]="query" type="text" placeholder="Location">
+    </div>
+</nav>
+
+  <table class="table table-bordered table-responsive">
+<tr *ngFor="let course of augCalendar | filter: 'location' : query">
+  <td>
+      {{course.name}}
+  </td>
+  <td>
+      {{course.fees}}
+  </td>
+    <td>  {{course.duration}}
+  </td>
+    <td>  {{course.mode}}
+  </td>
+    <td>  {{course.startDate}}
+  </td>
+    <td>  {{course.location}}
+  </td>
+    
+</tr>
+</table>

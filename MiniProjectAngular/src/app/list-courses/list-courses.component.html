@@ -1,0 +1,17 @@
+  <table class="">
+<tr *ngFor="let course of courses">
+  <td style="text-align: center">
+ <a> <img [src]='course.logo' alt='logo' class=".imageSize"></a>
+  </td>
+    <td>
+     <p> <span class="label"> Course Name</span> {{course.name}}</p>
+     <p> <span class="label">Duration </span> {{course.duration}} Hrs</p>
+      <p><span class="label"> Training Method</span> {{course.mode}}<p>
+      <p><span class="label">Start Date </span>{{course.startDate}}</p>
+  </td>
+       
+</tr>
+  </table>  
+
+
+  

@@ -1,0 +1,54 @@
+<datalist id="course">
+
+  <option>Java</option>
+  <option>Python</option>
+  <option>Java Script</option>
+  <option>Angular 1.x</option>
+    <option>Angular 4</option>
+    
+</datalist>
+
+<div class='wrapper'>
+
+<div class='col-md-6'>
+ 
+  <div class='form-group'>
+    <label  for='tourId'>Mobile Number</label>
+    <input  class='form-control' id='tourId' type="text" [(ngModel)]='mobileNumber'>
+  </div>
+
+  <div class='form-group'>
+     <label  for='tourName'>Student Name</label>
+    <input class='form-control' id='tourName' type="text" [(ngModel)]='studentName'>
+ 
+  </div>
+
+  <div class='form-group'>
+     <label  for='tourName'>Course</label>
+    <input class='form-control' id='tourName' type="text" [(ngModel)]='course' list="course">
+ 
+  </div>
+  <div>
+
+    <button class='btn btn-info' (click)='addStudent(mobileNumber,studentName,course)'>Add</button> 
+
+  </div>
+ 
+</div>
+
+<div class='col-md-6'>
+  <h2 class="text-center"> List of Students </h2>
+<table class='table table-bordered table-striped'>
+  <tr *ngFor="let student of studentList">
+    <td>{{student.mobileNumber}}</td>
+    <td>{{student.studentName}}</td>
+    <td>{{student.course}}</td>
+    <td><button (click)="removeStudent(student)">Remove</button></td>
+       
+    </tr>
+  <tr>
+    
+  </tr>
+</table>
+
+</div>
