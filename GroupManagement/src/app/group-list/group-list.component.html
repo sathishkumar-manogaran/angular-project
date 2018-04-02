@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let group of groups" (click)="getEmplGroupDetails(group)">
+    
+    <span >{{group.id}}</span>
+    <span>{{group.name}}</span>
+   
+  </li>
+</ul>
+   <app-employee-list></app-employee-list>   
