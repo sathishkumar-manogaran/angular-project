@@ -1,0 +1,18 @@
+
+<h1 class="centerAlign">Stock List</h1>
+<table>
+  <tr>
+      <th>Sl.No</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Unit</th>
+         
+    </tr>
+    <tr *ngFor="let medicine of medicineList let i=index">
+      <td>{{i+1}}</td>
+      <td>{{medicine.medicineName}}</td>
+      <td>{{medicine.price}}</td>
+      <td>{{medicine.unit}}</td>
+   
+    </tr>
+</table>

@@ -1,0 +1,20 @@
+
+<table>
+  <tr>
+      <th>Sl.No</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Unit</th>
+      <th>Stock</th>
+      
+    </tr>
+    <tr *ngFor="let medicine of medicineList let i=index">
+      <td>{{i+1}}</td>
+      <td>{{medicine.medicineName}}</td>
+      <td>{{medicine.price}}</td>
+      <td>{{medicine.unit}}</td>
+      <td>
+      <button (click)='showStock($event)' id="{{i+1}}">Show</button>
+      </td>
+    </tr>
+</table>

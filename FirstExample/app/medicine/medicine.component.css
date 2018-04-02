@@ -1,0 +1,25 @@
+.display{
+ 
+  text-align: center;
+  font-family: 'Arial';
+  font-size: 1.8em;
+
+  
+}
+table{
+
+    border: 2px solid green;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr,th,td{
+    border: 2px solid green;
+    border-collapse: collapse;
+}
+
+.centerAlign{
+
+    text-align: center
+}
